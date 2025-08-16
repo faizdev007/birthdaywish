@@ -80,6 +80,8 @@ body {
   font-style: italic;
   overflow: hidden;
   border-radius: 10px;
+  position: absolute;
+  top: 0;
 }
 
 p {
@@ -485,7 +487,7 @@ footer {
   #card {
     width: 90%;
     height: auto;
-    max-height: 100%;
+    max-height: 90vh;
     transform: none;
     position: relative;
   }
@@ -517,7 +519,7 @@ footer {
 
   /* Inside card adjustments */
   #card-inside {
-    transform-origin: bottom;
+    transform-origin: top;
     font-size: 1em;
   }
 
