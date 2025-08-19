@@ -523,9 +523,17 @@ footer {
     font-size: 1em;
   }
 
+  .birthdaywish {
+    height: 272px;
+  }
+
   /* Center iframe content properly */
   .birthdaywish iframe {
-    height: 200px;
+    height: 228px;
     width: 100%;
+  }
+
+  #rotatecard{
+    display: block;
   }
 }

@@ -6,6 +6,8 @@
   var card = $('card'),
       openB = $('open'),
       closeB = $('close'),
+      rotate = $('rotatecard'),
+      frontcard = $('card-front'),
       timer = null;
   console.log('wat', card);
   openB.addEventListener('click', function () {
@@ -18,6 +20,9 @@
   });
 
   closeB.addEventListener('click', function () {
+    if(frontcard.getAttribute('style')){
+      frontcard.setAttribute('style','')
+    }
     card.setAttribute('class', 'close-half');
     if (timer) clearTimerout(timer);
     timer = setTimeout(function () {
@@ -25,6 +30,15 @@
       timer = null;
     }, 1000);
   });
+
+
+  rotate.addEventListener('click',function(){
+    if(frontcard.getAttribute('style')){
+      frontcard.setAttribute('style','')
+    }else{
+      frontcard.setAttribute('style','transform:rotateY(180deg)!important')
+    }
+  })
   
   
 
